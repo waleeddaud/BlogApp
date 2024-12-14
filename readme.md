@@ -64,5 +64,5 @@ Contributions are welcome! To contribute:
 
 ## Contact
 Feel free to reach out with any questions or suggestions:
-- GitHub: [your-username](https://github.com/waleeddaud)
+- GitHub: https://github.com/waleeddaud
 - LinkedIn: https://www.linkedin.com/in/waleed-daud-6a377827b/
