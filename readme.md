@@ -9,8 +9,6 @@ This is a Blog App built with **FastAPI**, featuring user authentication, blog m
   - Create, update, delete, and view blogs.
 - **Database Integration**:
   - Connected to PostgreSQL to store user and blog data.
-- **Scalable Architecture**:
-  - Modular design for easy scalability and maintainability.
 
 ## Tech Stack
 - **Backend**: FastAPI
@@ -31,15 +29,15 @@ This is a Blog App built with **FastAPI**, featuring user authentication, blog m
    cd blogapp
    ```
 
-5. **Start the Server**:
+2. **Start the Server**:
    ```bash
    uvicorn main:app --reload
    ```
 
-6. **Access the App**:
+3. **Access the App**:
    Open your browser and navigate to `http://127.0.0.1:8000`.
 
-7. **Explore API Docs**:
+4. **Explore API Docs**:
    FastAPI provides an auto-generated interactive API documentation at:
    - Swagger UI: `http://127.0.0.1:8000/docs`
    - ReDoc: `http://127.0.0.1:8000/redoc`
@@ -53,7 +51,6 @@ blogapp/
 │   ├── schemas.py      # Pydantic schemas
 │   ├── utils.py        # Utility functions
 |   ├── deps.py         # Dependency 
-├── requirements.txt    # Python dependencies
 └── README.md           # Project documentation
 ```
 
@@ -64,10 +61,8 @@ Contributions are welcome! To contribute:
 3. Commit your changes and push to your branch.
 4. Submit a pull request.
 
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ## Contact
 Feel free to reach out with any questions or suggestions:
-- GitHub: [your-username](https://github.com/your-username)
-- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/your-profile)
+- GitHub: [your-username](https://github.com/waleeddaud)
+- LinkedIn: https://www.linkedin.com/in/waleed-daud-6a377827b/
