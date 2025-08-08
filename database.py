@@ -1,8 +1,11 @@
 from sqlalchemy import create_engine, Column, Integer, String, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, relationship, Session
+from dotenv import load_dotenv
+import os
+load_dotenv()
 # Database setup (PostgreSQL)
-DATABASE_URL = "postgresql://postgres:hihello@localhost/CrudApp_Secure"
+DATABASE_URL = os.getenv('DATABASE_URI')
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()

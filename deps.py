@@ -9,9 +9,6 @@ from database import  get_db
 # from main import oauth2_scheme
 from sqlalchemy.orm import Session
 
-
-# Utility function to get the current user based on JWT token
-# OAuth2 token bearer setup
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
 def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
     try:

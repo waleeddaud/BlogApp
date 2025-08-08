@@ -2,8 +2,6 @@ from sqlalchemy import Column, Integer, String, ForeignKey
 from database import Base
 from sqlalchemy.orm import relationship
 
-
-
 # Models
 class Blog(Base):
     __tablename__ = "Blog"

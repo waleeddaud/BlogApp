@@ -1,10 +1,12 @@
 from passlib.context import CryptContext
 from datetime import datetime, timedelta
 from jose import jwt
-
-SECRET_KEY = "2ba3594354d4eb2251b0312ed878273f67d8760acdd9319731ccc4647ae623e2"
-ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 30
+import os 
+from dotenv import load_dotenv
+load_dotenv() 
+ACCESS_TOKEN_EXPIRE_MINUTES = os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES')
+SECRET_KEY = os.getenv('SECRET_KEY')
+ALGORITHM = os.getenv('ALGORITHM')
 
 # Password hashing context
 password_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
